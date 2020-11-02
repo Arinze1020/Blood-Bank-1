@@ -16,14 +16,24 @@ def hel():
     conn.execute('CREATE TABLE IF NOT EXISTS users (name TEXT, addr TEXT, city TEXT, pin TEXT, bg TEXT,email TEXT UNIQUE, pass TEXT)')
     print( "Table created successfully")
     conn.close()
+    #if session.get('username')==True:
+        #messages = session['username']
+
+    #else:
+        #messages = ""
+    #user = {'username': messages}
+    #return redirect(url_for('index',user=user))
+    return render_template('home.html')
+
+@app.route('/search')
+def search():
     if session.get('username')==True:
         messages = session['username']
 
     else:
         messages = ""
     user = {'username': messages}
-    return redirect(url_for('index',user=user))
-
+    return render_template('index.html',user=user)
 
 @app.route('/reg')
 def add():
