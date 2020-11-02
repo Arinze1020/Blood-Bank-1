@@ -159,7 +159,7 @@
       <th scope="col">pin</th>
       <th scope="col">blood group</th>
       <th scope="col">email</th>
-      <th scope="col">contact them</th>
+      <!--th scope="col">contact them</th-->
       <th scope="col">delete</th>
     </tr>
 
@@ -173,7 +173,7 @@
                  <td>{{r['pin']}}</td>
                  <td>{{r['bg']}}</td>
                  <td>{{r['email']}}</td>
-                 <td><button type="button" class="btn btn-primary mt-1" data-toggle="modal" data-target="#exampleModalCenter">
+                 <!--td><button type="button" class="btn btn-primary mt-1" data-toggle="modal" data-target="#exampleModalCenter">
     contact for blood
   </button>
   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -197,7 +197,7 @@
       </div>
     </div>
   </div>
-</td>
+</td-->
                  <td><a href = "{{url_for('deleteuser',useremail=r['email'])}}" class="btn btn-danger">delete user</a></td>
               </tr>
            {% endfor %}

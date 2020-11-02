@@ -31,30 +31,31 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #6a0909;">
 
+    <div class="container">
+      <a class="navbar-brand" href="/">Blood Bank</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/dashboard">Dashboard</a>
+          </li>
 
-    <a class="navbar-brand" href="/">Blood Bank</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/dashboard">Dashboard</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="/bloodbank">add blood</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="{{url_for('logout')}}">logout</a>
-        </li>
-      </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="/bloodbank">add blood</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('logout')}}">logout</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
   </nav>
@@ -63,39 +64,40 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #6a0909;">
 
-
-    <a class="navbar-brand" href="/">Blood Bank</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{url_for('myprofile',email=session['username'])}}">myprofile</a>
-        </li>
-        <li class="nav-item">
+    <div class="container">
+      <a class="navbar-brand" href="/">Blood Bank</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('myprofile',email=session['username'])}}">myprofile</a>
+          </li>
+          <!--li class="nav-item">
           <a class="nav-link" href="{{url_for('notifications')}}">notifications</a>
-        </li>
-      </ul>
+        </li-->
+        </ul>
 
 
-      <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto">
 
-        <li class="nav-item">
-          <a class="nav-link" href="#"> Hi, {{ session['username']}}</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{url_for('logout')}}">logout</a>
-        </li>
-      </ul>
+          <li class="nav-item">
+            <a class="nav-link"> Hi, {{ session['username']}}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('logout')}}">logout</a>
+          </li>
+        </ul>
 
+      </div>
     </div>
-
   </nav>
+
 
 
   {%else%}
