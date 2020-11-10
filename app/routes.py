@@ -39,6 +39,13 @@ def search():
 def add():
     return render_template('register.html')
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
 @app.route('/addrec',methods = ['POST', 'GET'])
 def addrec():
