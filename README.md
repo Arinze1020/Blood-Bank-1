@@ -1,15 +1,14 @@
 # Blood-Bank
 Blood bank website made with [python3](https://www.python.org/download/releases/3.0/) ,[flask](http://flask.pocoo.org/), [Sqlite](https://www.sqlite.org/index.html), [Bootstrap](https://getbootstrap.com). 
 
-The web app was made for the project under the  CSE 5th semester course DBMS (Database Management Systems) of [MSRIT](http://www.msrit.edu/) banglore.
+The web app was made for the project under ...
 
 Some of the functionality which can be benefited by being a User is listed below
 
 1. User Registration and Login, Logout.
 2. Update your Profile , Delete your account.
 3. Request/contact for Blood.
-4. Notification's for Requests.
-5. Search for Blood.
+4. Search for Blood.
 
 NOTE : admin's credentials
 
