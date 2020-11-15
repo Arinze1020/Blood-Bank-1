@@ -5,7 +5,7 @@
 <div class="container h-100">
     <div class="row h-100 align-items-center justify-content-center text-center">
         <div class="col-lg-10 align-self-end">
-            <h1 class="text-uppercase text-black font-weight-bold">Meeting Place for Blood Donor and Receiver </h1>
+            <h1 class="text-uppercase text-black font-weight-bold">Online Blood Banking Management System</h1>
             <hr class="divider my-4" />
         </div>
         <div class="col-lg-8 align-self-baseline">
@@ -14,6 +14,34 @@
                 lives.</p>
             <a class="btn btn-primary btn-xl js-scroll-trigger btn btn-danger" href="{{url_for('search')}}">Search
                 Donor</a>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Donation
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Donation To help keep the System Running</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            You are not paying for the blood you receive but a Token to keep
+                            delivaring and providing you with the support you need.
+                            Bank account:
+                            Account Number:
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>

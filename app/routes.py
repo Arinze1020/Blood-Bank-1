@@ -487,12 +487,6 @@ def notifications():
 
 
 
-
-
-
-
-
-
 @app.route('/deleteuser/<useremail>',methods=('GET', 'POST'))
 def deleteuser(useremail):
     if request.method == 'GET':
