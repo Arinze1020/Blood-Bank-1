@@ -327,12 +327,13 @@ def addb():
            dweight = request.form['dweight']
            email = request.form['email']
            phone = request.form['phone']
+           date = request.form['date']
 
 
 
            with sqlite3.connect("database.db") as con:
               cur = con.cursor()
-              cur.execute("INSERT INTO blood (type,donorname,donorsex,qty,dweight,donoremail,phone) VALUES (?,?,?,?,?,?,?)",(type,donorname,donorsex,qty,dweight,email,phone) )
+              cur.execute("INSERT INTO blood (type,donorname,donorsex,qty,dweight,donoremail,phone,date) VALUES (?,?,?,?,?,?,?,?)",(type,donorname,donorsex,qty,dweight,email,phone,date) )
               con.commit()
               msg = "Record successfully added"
         except:

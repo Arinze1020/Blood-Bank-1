@@ -103,7 +103,7 @@
 
 
 <div class="alert alert-primary" role="alert">
-  <h4>blood donatations and their details</h4>
+  <h4>Blood donatators And Their Details</h4>
 </div>
 
 
@@ -112,11 +112,12 @@
              <h5 class="card-header">{{row["donorname"]}}</h5>
              <div class="card-body">
                <h5 class="card-title">{{row["type"]}}</h5>
-               <p class="card-text">{{ row["donoremail"]}}
-               {{row['donorsex']}}
-               {{row['qty']}} pints
-               {{row['dweight']}}kg's
-               {{row['phone']}}</p>
+               <h6 class="card-title">Date Donated: {{row["date"]}}</h6>
+               <p class="card-text">Email: {{ row["donoremail"]}}
+               <h6 class="card-title">Sex: {{row["donorsex"]}}</h6>
+               <h6 class="card-title">Quantity: {{row["qty"]}}</h6>
+               <h6 class="card-title">Donores Weight: {{row["dweight"]}}Kg's</h6>
+               <h6 class="card-title">Phone Number: {{row["Phone"]}}</h6>
                <div class="row">
     <div class="col">
       <form action="{{url_for('editdonor',id=row['id'])}}" method="GET">
@@ -153,12 +154,12 @@
         <table class="table">
           <thead>
     <tr>
-      <th scope="col">name</th>
-      <th scope="col">address</th>
-      <th scope="col">city</th>
-      <th scope="col">pin</th>
-      <th scope="col">blood group</th>
-      <th scope="col">email</th>
+      <th scope="col">Name</th>
+      <th scope="col">Address</th>
+      <th scope="col">City</th>
+      <th scope="col">Post Code</th>
+      <th scope="col">Blood Group</th>
+      <th scope="col">Email</th>
       <!--th scope="col">contact them</th-->
       <th scope="col">delete</th>
     </tr>
